@@ -12,6 +12,12 @@
 // Did this code successfully run on Leetcode : Yes
 // Any problem you faced while coding this : No
 
+/*
+ * Alternate approach: Use binary search to find one occurrence of the target,
+ * then expand linearly to the left and right to find start and end positions.
+ * This is simpler but results in O(n) time in the worst case due to linear scanning.
+ */
+
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int[] res = {-1, -1}; // Default result if target is not found
